@@ -8,7 +8,11 @@ function Die(props) {
     }
     return (
 
-        <button style={styles} onClick={() => props.hold(props.id)}>{props.value} </button>
+        <button
+            aria-label={`Die with value ${props.value}, 
+            ${props.isHeld ? "held" : "not held"}`}
+            style={styles}
+            onClick={() => props.hold(props.id)}>{props.value} </button>
 
     )
 }
