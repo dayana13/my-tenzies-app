@@ -1,0 +1,86 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #0B2434;
+  height: 100vh;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+div#root {
+  height: 100%;
+  width: 100%;
+  max-height: 400px;
+  max-width: 400px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background-color: #F5F5F5;
+  border-radius: 5px;
+
+}
+
+.dice-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  /* 5 equal-width columns */
+  grid-template-rows: repeat(2, 1fr);
+  /* 2 equal-height rows */
+  gap: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #F5F5F5;
+  margin-bottom: 40px;
+}
+
+.dice-container button {
+  background-color: lightgray;
+  /* Color for the boxes */
+  padding: 20px;
+  /* Add some padding inside each box */
+  text-align: center;
+  /* Center text inside each box */
+  border-radius: 5px;
+  /* Optional: adds rounded corners */
+
+  cursor: pointer;
+
+}
+
+.roll-dice {
+  background-color: #E0E0E0;
+  height: 50px;
+  white-space: nowrap;
+  width: auto;
+  padding: 10px 20px;
+  border-radius: 6px;
+  border: none;
+  background-color: blue;
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+
+.title {
+  font-size: 40px;
+  margin: 0;
+}
+
+.instructions {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  margin-top: 0;
+  text-align: center;
+}
